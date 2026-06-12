@@ -1,3 +1,0 @@
-Hi
-
-[[MOC - JavaScript Core]]
