@@ -48,7 +48,8 @@ async function getUserData() {
 If tasks don't depend on each other, do not `await` them sequentially, as it creates a bottleneck. Instead, start them simultaneously and use `Promise.all()`.
 
 ## Related
-
 - [[js-promises-anatomy-and-chaining]] - The underlying technology of async/await.
 - [[js-the-event-loop-and-call-stack]] - How `await` yields control back to the call stack.
 - [[js-try-catch-finally-flow]] _(Future Note)_ - Required for handling errors in async/await.
+* [[pw-test-runner-and-hooks]] - Execution lifecycle hooks require async/await to coordinate setup and cleanup order.
+* [[pw-web-first-assertions]] - Web-first assertions return promises that must be awaited to check states correctly.

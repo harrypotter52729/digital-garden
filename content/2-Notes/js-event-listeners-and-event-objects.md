@@ -99,3 +99,4 @@ emailInput.addEventListener("keydown", (event) => {
 * [[js-dom-tree-and-element-selection]] - Selecting elements to target.
 * [[js-the-event-loop-and-call-stack]] - Queueing and processing user-triggered callbacks.
 * [[js-callbacks-and-inversion-of-control]] - Handing callbacks to browser APIs.
+* [[pw-handling-alerts-and-dialogs]] - Playwright registers listener callbacks on dialog events similarly to standard DOM events.

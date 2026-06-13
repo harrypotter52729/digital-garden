@@ -110,3 +110,5 @@ console.log("Current Cookies:", document.cookie);
 * [[js-primitive-vs-reference-types]] - Differentiating primitives from reference objects.
 * [[js-dom-tree-and-element-selection]] - Selecting elements to retrieve inputs.
 * [[js-json-parse-and-stringify]] - Serializing objects to storage strings.
+* [[pw-browser-context-and-page-model]] - Browser contexts isolate cookie and localStorage databases between runs.
+* [[pw-authentication-state-reuse]] - Authentication state reuse works by saving and loading active cookies and storage keys.

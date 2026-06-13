@@ -42,5 +42,6 @@ console.log("3. End");
 Even with a delay of `0` milliseconds, `setTimeout` is handed off to the Web API. The callback is placed in the queue and must wait for the synchronous code ("1" and "3") to finish clearing the Call Stack before the Event Loop moves it over.
 
 ## Related
-
 - [[js-microtasks-vs-macrotasks]] - Nuances in how different queues are prioritized.
+* [[pw-actionability-and-auto-waiting]] - Asynchronous polling checks are managed by the event loop microtask queue.
+* [[pw-parallel-vs-serial-execution]] - Coordinates concurrent worker threads asynchronously on the event loop.

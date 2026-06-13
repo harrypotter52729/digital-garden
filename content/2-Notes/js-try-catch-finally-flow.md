@@ -45,7 +45,8 @@ try {
     
 
 ## Related
-
 - [[js-async-await-syntax]] - How `try...catch` replaces `.catch()` in modern async code.
     
 - [[js-throwing-custom-errors]] - How to manually trigger the `catch` block.
+* [[pw-soft-assertions]] - Errors are caught programmatically to log failures without aborting the execution thread.
+* [[pw-handling-custom-error-reporting]] - Test runner execution hooks utilize try-catch-finally loops to clean resources on failure.

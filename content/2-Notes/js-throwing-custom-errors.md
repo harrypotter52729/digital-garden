@@ -60,7 +60,7 @@ if (error instanceof ValidationError) {
 ```
 
 ## Related
-
 - [[js-try-catch-finally-flow]] - How to catch what you throw.
     
 - [[js-es6-classes-under-the-hood]] - Extending built-in objects.
+* [[pw-handling-custom-error-reporting]] - Playwright wraps automation failures into custom error objects with full stack traces.

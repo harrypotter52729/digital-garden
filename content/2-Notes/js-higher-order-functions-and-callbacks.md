@@ -42,7 +42,7 @@ processUser("Bob", greet); // "Processed: Hello, Bob!"
 This pattern is the foundation of asynchronous JavaScript (Promises/Event Listeners) and functional array methods (like `map`, `filter`, and `reduce`).
 
 ## Related
-
 - [[js-function-declaration-vs-expression]]
 - [[js-callbacks-and-inversion-of-control]] _(Future Note: Asynchronous JS)_
 - [[js-map-filter-reduce]] _(Future Note: Arrays)_
+* [[pw-custom-fixtures]] - Custom fixtures utilize callback execution wraps to pass initialized objects into test blocks.

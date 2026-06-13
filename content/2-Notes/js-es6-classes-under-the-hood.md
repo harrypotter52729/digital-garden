@@ -58,6 +58,6 @@ bob.sayHi();
 - `super()` calls the constructor function of the parent class. In a child class constructor, you _must_ call `super()` before you can use the `this` keyword.
 
 ## Related
-
 - [[js-prototypal-inheritance]] - The actual mechanism running behind the `class` keyword.
 - [[js-the-this-keyword-rules]] - How the `new` keyword instantiates the class.
+* [[pw-page-object-model-pattern]] - Page Object Model pages are structured as JavaScript classes with constructors and prototype methods.

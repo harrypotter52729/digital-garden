@@ -47,6 +47,7 @@ fetchUserData()
 ```
 
 ## Related
-
 - [[js-callbacks-and-inversion-of-control]] - What Promises were built to fix.
 - [[js-microtasks-vs-macrotasks]] - `.then` and `.catch` callbacks are pushed to the Microtask queue.
+* [[pw-actionability-and-auto-waiting]] - Playwright's auto-waiting loops rely on resolving JavaScript promises under the hood.
+* [[pw-web-first-assertions]] - Web-first assertions return promises that poll the DOM until resolved or timed out.

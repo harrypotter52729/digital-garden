@@ -120,3 +120,4 @@ function leakMemory() {
 * [[MOC - JS Data Types & Memory]] - Heap allocation and reference memory models.
 * [[js-closures-and-lexical-environment]] - Closures preventing garbage collection.
 * [[js-the-event-loop-and-call-stack]] - Active call stack reachability roots.
+* [[pw-browser-context-and-page-model]] - Clearing contexts drops references so the engine can run mark-and-sweep sweeps.

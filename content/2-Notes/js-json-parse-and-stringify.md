@@ -110,3 +110,5 @@ console.log(hydratedObj.backupDate.getFullYear()); // 2026
 * [[MOC - JS Objects & Structures]] - Core syntax of JavaScript objects.
 * [[js-browser-storage-local-session-cookies]] - Storing serialized objects in localStorage.
 * [[js-primitive-vs-reference-types]] - Differentiating references from primitive values.
+* [[pw-api-interception-and-mocking]] - Mocking network payloads requires serializing JSON strings using stringify.
+* [[pw-handling-js-evaluations]] - Arguments and return values are serialized to JSON strings when crossing browser process boundaries.

@@ -103,3 +103,4 @@ descriptions.forEach((paragraph, index) => {
 * [[js-the-event-loop-and-call-stack]] - Coordinates asynchronous user actions like clicks.
 * [[MOC - JavaScript Core]] - The central hub for core concepts.
 * [[MOC - JS Objects & Structures]] - DOM elements are objects in memory.
+* [[pw-built-in-locators-vs-css-xpath]] - Playwright built-in locators query the underlying DOM tree using accessible roles.
