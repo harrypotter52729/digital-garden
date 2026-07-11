@@ -22,6 +22,11 @@ This map focuses on the nature of JavaScript's type system and how different dat
 * [[js-primitive-vs-reference-types]] - How primitives are stored by value (Stack) and objects by reference (Heap).
 * [[js-shallow-vs-deep-copy]] - The implications of reference types when copying data and how to avoid accidental mutations.
 
+## Strings & Memory
+* [[js-string-fundamentals]] - Strings as ordered sequences of UTF-16 code units.
+* [[js-string-immutability]] - Why string primitives cannot be changed after creation.
+* [[js-string-memory-storage]] - String interning, reference sharing, and Rope string engine layouts.
+
 ---
 **Related MOCs:**
 * [[MOC - JS Type Conversion & Equality]] (How these types interact when compared)

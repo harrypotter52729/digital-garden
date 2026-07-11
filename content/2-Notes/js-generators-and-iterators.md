@@ -111,5 +111,5 @@ chat.next("Coding"); // Logs: "Wow, Coding sounds super fun!"
 
 ## Related
 * [[js-for-of-iterator]] - Loop syntax designed for iterables.
-* [[concept-js-iterable-vs-enumerable]] - Iteration protocols vs enlisting properties.
+* [[js-iterable-vs-enumerable]] - Iteration protocols vs enlisting properties.
 * [[js-the-event-loop-and-call-stack]] - Execution context stacks during yielding.

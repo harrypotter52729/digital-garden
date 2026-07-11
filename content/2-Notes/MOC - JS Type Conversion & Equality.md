@@ -19,11 +19,13 @@ This map organizes the rules of how JavaScript changes data types on the fly (co
 * [[js-explicit-type-conversion-methods]] - Manually converting types (e.g., `Number()`, `String()`).
 * [[js-implicit-coersion]] - When the JS engine automatically converts types.
 * [[js-operator-overloading-and-string-dominance]] - How the `+` operator behaves differently than `-`, `*`, or `/`.
+* [[js-string-autoboxing]] - Wrapping primitive strings in wrapper objects during method calls.
 
 ## Equality & Evaluation
 * [[js-falsy-values]] - The specific values that evaluate to `false` in a boolean context.
 * [[js-strict-vs-loose-equality]] - The difference between `==` and `===`.
 * [[js-loose-equality-comaprison-rules]] - The specific algorithm JS uses when evaluating `==`.
+* [[js-unicode-utf16-strings]] - Addressing string equality issues caused by surrogate pairs and decomposed characters.
 
 ---
 **Related MOCs:**

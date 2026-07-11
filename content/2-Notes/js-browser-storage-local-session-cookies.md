@@ -41,7 +41,7 @@ Imagine you are visiting a library:
 Both use the exact same key-value API under the hood. 
 
 > [!IMPORTANT]
-> **Strings Only:** Web Storage can **only** store strings. If you want to store an object or array, you must convert it to a JSON string first using `[[js-json-parse-and-stringify|JSON.stringify()]]`, and read it back with `[[js-json-parse-and-stringify|JSON.parse()]]`.
+> **Strings Only:** Web Storage can **only** store strings. If you want to store an object or array, you must convert it to a JSON string first using [[js-json-parse-and-stringify|JSON.stringify()]], and read it back with [[js-json-parse-and-stringify|JSON.parse()]].
 
 ```javascript
 // Saving data

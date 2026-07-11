@@ -45,7 +45,7 @@ console.log(sym1 === sym2); // false! They are completely unique.
 ---
 
 ## 2. Uniqueness and Hidden Fields
-Properties keyed with Symbols are **enumerable-hidden** (see [[concept-js-iterable-vs-enumerable]]). They are ignored by standard inspection loops:
+Properties keyed with Symbols are **enumerable-hidden** (see [[js-iterable-vs-enumerable]]). They are ignored by standard inspection loops:
 - They do **not** show up in `for...in` loops.
 - They do **not** appear in `Object.keys()` or `Object.getOwnPropertyNames()`.
 - They are **discarded** by `JSON.stringify()`.
@@ -122,5 +122,5 @@ for (const step of stepsTracker) {
 
 ## Related
 * [[MOC - JS Data Types & Memory]] - Symbols are primitive data types.
-* [[concept-js-iterable-vs-enumerable]] - Iterables rely on Symbol iterator hooks.
+* [[js-iterable-vs-enumerable]] - Iterables rely on Symbol iterator hooks.
 * [[js-generators-and-iterators]] - Overriding iteration protocols with generators.

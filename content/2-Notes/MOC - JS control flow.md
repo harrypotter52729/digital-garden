@@ -26,8 +26,8 @@ This map covers how JavaScript handles repeated execution of code blocks through
 
 ## Conceptual Patterns & Best Practices
 * [[js-loop-selection-strategy]] - When to use `for` vs `while`.
-* [[concept-js-iterable-vs-enumerable]] - The semantic difference between `for...of` and `for...in`.
-* [[anti-pattern-infinite-loops]] - Common pitfalls and memory leaks.
+* [[js-iterable-vs-enumerable]] - The semantic difference between `for...of` and `for...in`.
+* [[js-anti-pattern-infinite-loops]] - Common pitfalls and memory leaks.
 
 ---
 **Related MOCs:**

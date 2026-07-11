@@ -25,6 +25,10 @@ This map focuses on JavaScript's standard built-in objects, serialization helper
 ## Mathematical Precision
 * [[js-floating-point-math-quirks]] - Working around V8 float rounding limits.
 
+## String Operations
+* [[js-string-autoboxing]] - Wrapping primitive strings in temporary objects.
+* [[js-string-character-access]] - Internal access speeds and out-of-bounds behavior of bracket notation vs. charAt.
+
 ---
 **Related MOCs:**
 * [[MOC - JavaScript Core]]

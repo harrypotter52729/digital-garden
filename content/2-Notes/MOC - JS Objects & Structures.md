@@ -21,7 +21,7 @@ This map acts as a hub for understanding how JavaScript constructs, unpacks, and
 ## Iteration & Manipulation
 *(Concepts bridging Objects and Control Flow)*
 * [[js-for-in-legacy]] - Looping over object properties.
-* [[concept-js-iterable-vs-enumerable]] - Understanding what makes object properties accessible.
+* [[js-iterable-vs-enumerable]] - Understanding what makes object properties accessible.
 
 ---
 **Future Concepts to Add:**

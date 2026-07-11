@@ -93,6 +93,6 @@ console.log("High Stock:", highStockInventory);
 ---
 
 ## Related
-* [[concept-js-iterable-vs-enumerable]] - Objects are enumerable, not iterable.
+* [[js-iterable-vs-enumerable]] - Objects are enumerable, not iterable.
 * [[js-destructuring]] - Unpacking property tuples during loops.
 * [[MOC - JS Objects & Structures]] - Hub for object operations.

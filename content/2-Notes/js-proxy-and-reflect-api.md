@@ -116,4 +116,4 @@ try {
 ## Related
 * [[MOC - JS Objects & Structures]] - Object descriptors intercepted by Proxy.
 * [[js-the-this-keyword-rules]] - Context binding using target receivers.
-* [[concept-js-iterable-vs-enumerable]] - Iteration traps intercepting property descriptors.
+* [[js-iterable-vs-enumerable]] - Iteration traps intercepting property descriptors.
