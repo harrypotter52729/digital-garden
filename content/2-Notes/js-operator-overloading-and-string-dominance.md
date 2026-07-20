@@ -29,3 +29,6 @@ mastery_level: 1
 - unlike '+' these exists only in maths , so js *converts the string to numbers.*
 - Number > String
 - **Example:** `'5' - '2'` results in `3` 
+
+## Related
+* [[js-string-concat]] - String joining methods and engine rope optimization rules. 

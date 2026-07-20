@@ -165,6 +165,8 @@ console.log("Equal after normalization?:", precomposed === fixedDecomposed); // 
 ---
 
 ## Related
+* [[js-string-charcodeat-vs-codepointat]] - Reading 16-bit code units vs full Unicode code points.
+* [[js-string-normalize]] - Unicode composition and decomposition normalizations (NFC/NFD).
 * [[js-for-of-iterator]] - Iterating safely over strings and code points.
 * [[js-string-character-access]] - How indexing retrieves code units vs code points.
 * [[MOC - JS Type Conversion & Equality]] - Equality concerns when comparing decomposed string representations.

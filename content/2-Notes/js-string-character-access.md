@@ -124,6 +124,7 @@ console.log("Retrieved second half (Low surrogate):", encodeURIComponent(unit2))
 ---
 
 ## Related
+* [[js-string-at]] - Accessing characters using positive or negative indexes.
 * [[js-unicode-utf16-strings]] - Deep dive into code units, points, and surrogate pair details.
 * [[js-string-fundamentals]] - Fundamental traits of strings including length and zero-indexing.
 * [[MOC - JS Built-in Objects & Utilities]] - Hub for built-in object methods.
