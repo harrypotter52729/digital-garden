@@ -21,6 +21,9 @@ This map focuses on the nature of JavaScript's type system and how different dat
 ## Memory & References
 * [[js-primitive-vs-reference-types]] - How primitives are stored by value (Stack) and objects by reference (Heap).
 * [[js-shallow-vs-deep-copy]] - The implications of reference types when copying data and how to avoid accidental mutations.
+* [[js-array-sparse-vs-dense-holes]] - Packed vs holey array representations in V8 memory.
+* [[js-array-length-mechanics]] - Dynamic allocation and heap truncation mechanics.
+* [[js-array-typed-arrays-and-arraybuffer]] - Raw binary memory allocations (`ArrayBuffer`, `TypedArray`, `DataView`).
 
 ## Strings & Memory
 * [[js-string-fundamentals]] - Strings as ordered sequences of UTF-16 code units.

@@ -22,6 +22,10 @@ This map acts as a hub for advanced function architectures and rate-limiting pat
 * [[js-function-currying]] - Reconstructing functions to take arguments sequentially.
 * [[js-closures-and-lexical-environment]] - Understanding persistent execution contexts that power these patterns.
 * [[js-higher-order-functions-and-callbacks]] - Passing and returning functions dynamically.
+* [[js-array-foreach-vs-map-filter]] - Functional iteration paradigms (`forEach`, `map`, `filter`).
+* [[js-array-reduce-and-reduceright]] - Aggregation and fold patterns.
+* [[js-array-push-pop-shift-unshift-splice]] - Time complexity analysis of mutating array operations ($O(1)$ vs $O(n)$).
+* [[js-array-algorithmic-patterns]] - Deduplication, frequency counting, two pointers, sliding window, and prefix sums.
 
 ---
 **Related MOCs:**

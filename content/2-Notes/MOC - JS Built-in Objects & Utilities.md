@@ -22,6 +22,24 @@ This map focuses on JavaScript's standard built-in objects, serialization helper
 * [[js-object-keys-values-entries]] - Extracting arrays of keys, values, or entries from objects.
 * [[js-object-freeze-vs-seal]] - Applying varying levels of immutability to object configurations.
 
+## Array Operations & Data Structures
+* [[js-array-specialized-objects]] - Array object model, property keys, and object inheritance.
+* [[js-array-sparse-vs-dense-holes]] - Dense vs sparse arrays and empty slots (holes) vs undefined.
+* [[js-array-length-mechanics]] - Array length property, automatic updates, and truncation mechanics.
+* [[js-array-creation-methods]] - Creation via `[]`, `Array()`, `Array.of()`, and `Array.from()`.
+* [[js-array-access-at-and-optional-chaining]] - Indexing, `at()`, and optional chaining `?.[]`.
+* [[js-array-push-pop-shift-unshift-splice]] - Mutating element operations, memory shifts, and complexity.
+* [[js-array-methods-mutating-vs-non-mutating]] - Complete reference of mutating vs non-mutating array operations.
+* [[js-array-modern-immutable-methods]] - Modern ES2023 immutable methods (`toSorted`, `toReversed`, `toSpliced`, `with`).
+* [[js-array-foreach-vs-map-filter]] - Functional iteration semantics (`forEach`, `map`, `filter`).
+* [[js-array-reduce-and-reduceright]] - Aggregation via `reduce` and `reduceRight`.
+* [[js-array-flat-and-flatmap]] - Array flattening (`flat`, `flatMap`).
+* [[js-array-searching-includes-vs-indexof-find]] - Primitive and object search APIs (`includes`, `indexOf`, `find`, `findLast`).
+* [[js-array-holes-in-methods]] - Hole handling algorithms across ES5 vs ES6+ ECMAScript built-ins.
+* [[js-array-iterators-keys-values-entries]] - Array iterators (`keys`, `values`, `entries`) and iteration protocols.
+* [[js-array-typed-arrays-and-arraybuffer]] - `ArrayBuffer`, `TypedArray`, and `DataView` binary memory.
+* [[js-array-algorithmic-patterns]] - Deduplication, frequency counting, two pointers, sliding window, and prefix sums.
+
 ## Mathematical Precision
 * [[js-floating-point-math-quirks]] - Working around V8 float rounding limits.
 
