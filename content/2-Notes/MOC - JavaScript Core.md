@@ -19,7 +19,7 @@ source: ""
 - **[[MOC - JS Data Types & Memory]]**
 - **[[MOC - JS Type Conversion & Equality]]**
 - **[[MOC - JS Logic & Conditionals]]**
-- **[[MOC - JS Control flow]]**
+- **[[MOC - JS Control Flow]]**
 - **[[MOC - JS Objects & Structures]]**
 - **[[MOC - JS Browser & DOM]]**
 - **[[MOC - JS Modern Syntax & Operators]]**

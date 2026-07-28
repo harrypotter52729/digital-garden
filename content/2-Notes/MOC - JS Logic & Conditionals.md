@@ -20,9 +20,9 @@ This map covers how JavaScript makes decisions and branches execution paths base
 * [[js-ternary-operator]] - Inline, single-expression conditionals.
 
 ## Logical Operators & Evaluation
-* [[js-short-circuting]] - How `&&` and `||` evaluate expressions and return values (not just booleans).
+* [[js-short-circuiting]] - How `&&` and `||` evaluate expressions and return values (not just booleans).
 * [[js-difference-between-or-operator-and-nullish-coalescing]] - Understanding `||` (falsy check) vs `??` (nullish check).
 
 ---
 **Related MOCs:**
-* [[MOC - JS Control flow]] (Logic applied to repeated execution/loops)
+* [[MOC - JS Control Flow]] (Logic applied to repeated execution/loops)

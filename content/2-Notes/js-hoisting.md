@@ -18,7 +18,7 @@ mastery_level: 1
 It's not actually moves the code, but it create a declaration in memory
 
 1. **var** initial value is undefined.
-2. **let & const**  are not initialized and they will be store in [[Temporal dead zone]], so on execution we will get reference error
+2. **let & const**  are not initialized and they will be store in [[js-temporal-dead-zone|Temporal Dead Zone]], so on execution we will get reference error
 
 ```js
 console.log(foo); // undefined

@@ -1,30 +1,73 @@
 ---
-id: 202601282147
-title: js-null-vs-undefined
+id: 202607282021
+title: Null vs Undefined Mechanics & Differentials
 aliases:
-  - JS Emptiness
+  - null vs undefined
+  - undefined vs null
+  - typeof null bug
 tags:
   - type/concept
-  - lang/js
   - status/processing
+  - lang/js
   - topic/types
-date_created: 2026-01-28
-date_modified: 2026-01-28
+date_created: 2026-07-28
 mastery_level: 1
 ---
-## js-null-vs-undefined
 
+# Null vs Undefined Mechanics & Differentials
 
-both specifies the **absence of the value**
+> **TL;DR:** `undefined` is JavaScript's default signal meaning "a variable has been declared but not assigned a value," while `null` is an explicit developer signal meaning "this variable intentionally points to empty space or no object!"
 
-### undefined
-- default value of the variable if it is not assigned
-- **Arithmetic** equals to **NaN**
-- `null == undefined` is **true**
-### null
-- intentionally assigned empty value.
-- **Arithmetic** converts to 0
-- `null === undefined` is **false** 
+---
 
+## Comparison Table
+
+| Attribute | `undefined` | `null` |
+| :--- | :--- | :--- |
+| **Meaning** | Uninitialized / System default | Intentional emptiness / Developer assignment |
+| **Type (`typeof`)** | `"undefined"` | `"object"` (Historical JS 1.0 engine bug!) |
+| **Number Coercion** | `Number(undefined)` -> `NaN` | `Number(null)` -> `0` |
+| **JSON Serialization**| Omitted from object properties | Preserved as `null` literal |
+| **Default Parameters**| Triggers default function args | Bypasses default function args |
+
+---
+
+## Canonical Code Example
+
+```javascript
+/**
+ * Demonstrates null vs undefined differentials in type checks, 
+ * default parameters, and JSON serialization.
+ */
+
+// 1. Type Check Quirks
+console.log("typeof undefined:", typeof undefined); // Expected: "undefined"
+console.log("typeof null:", typeof null);           // Expected: "object" (Legacy bug)
+
+// 2. Equality Comparisons
+console.log("null == undefined:", null == undefined);   // Expected: true (Loose equality)
+console.log("null === undefined:", null === undefined); // Expected: false (Strict equality)
+
+// 3. Default Parameter Behavior
+function greet(name = "Guest") {
+  return `Hello, ${name}`;
+}
+
+console.log("greet(undefined):", greet(undefined)); // Expected: "Hello, Guest" (Triggers default!)
+console.log("greet(null):", greet(null));           // Expected: "Hello, null" (Does NOT trigger default!)
+
+// 4. JSON Serialization
+const payload = {
+  unassigned: undefined,
+  empty: null
+};
+
+console.log("JSON.stringify():", JSON.stringify(payload)); // Expected: '{"empty":null}' (undefined key dropped!)
+```
+
+---
 
 ## Related
+- [[js-falsy-values]] — Boolean coercion of null and undefined.
+- [[js-primitive-vs-reference-types]] — Primitive types overview.
+- [[MOC - JS Data Types & Memory]] — Data Types MOC.

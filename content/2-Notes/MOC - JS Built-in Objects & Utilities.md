@@ -81,3 +81,7 @@ This map focuses on JavaScript's standard built-in objects, serialization helper
 **Related MOCs:**
 * [[MOC - JavaScript Core]]
 * [[MOC - JS Objects & Structures]]
+
+
+* [[js-set-and-weakset]] — Set & WeakSet data structures.
+* [[js-es-modules-import-export]] — ES Modules syntax (`import` / `export`).

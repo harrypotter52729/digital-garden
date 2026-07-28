@@ -148,6 +148,6 @@ console.log("Shopping List after function call:", shoppingList);
 ---
 
 ## Related
-* [[js-const-mutabilty]] - Const binds the variable box, whereas immutability locks the value itself.
+* [[js-const-mutability]] - Const binds the variable box, whereas immutability locks the value itself.
 * [[js-primitive-vs-reference-types]] - Comparing pass-by-value for primitives and pass-by-sharing for references.
 * [[MOC - JS Objects & Structures]] - Hub comparing object mutability to primitive immutability.

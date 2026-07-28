@@ -34,4 +34,4 @@ mastery_level: 1
 - occurs in if conditions and logical operations like || and  &&
 - [[js-falsy-values]] - these types are converted to false
 - other than these [],{} are also truthy values
-- [[js-loose-equality-comaprison-rules]] - loose comparison coersion rules
+- [[js-loose-equality-comparison-rules]] - loose comparison coersion rules

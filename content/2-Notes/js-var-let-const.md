@@ -28,7 +28,7 @@ They differ in behavior, like scope, Hoisting ,Mutability, Scope.
 
 ## Related
 [[js-hoisting]] - how these declaration behave during creation phase
-[[js-const-mutabilty]] - const and immutable misunderstoop concepts
+[[js-const-mutability]] - const and immutable misunderstoop concepts
 
 
 

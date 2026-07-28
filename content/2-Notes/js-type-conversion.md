@@ -27,4 +27,4 @@ mastery_level: 1
 ### snippets
 
 - [[js-explicit-type-conversion-methods]] - `String()`, `Number()`, etc.
-- [[js-implicit-coersion]] -  Examples of implicit conversion.
+- [[js-implicit-coercion]] -  Examples of implicit conversion.

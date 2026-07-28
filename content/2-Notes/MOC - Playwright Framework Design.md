@@ -33,3 +33,11 @@ This map acts as a central hub for clean code abstractions, fixture extensions, 
 * [[MOC - Playwright Assertions]]
 * [[MOC - Playwright Locators and Actions]]
 * [[MOC - JavaScript Core]]
+
+
+* [[pw-storage-state-auth]] — Session storage state reuse for fast authentication.
+
+* [[pw-pom-base-page]] — Reusable BasePage abstraction.
+* [[pw-test-data-faker]] — Dynamic test data generation with Faker.js.
+* [[pw-api-request-context]] — Hybrid API + UI test workflows.
+* [[pw-custom-reporters]] — HTML, JSON & JUnit reporters.

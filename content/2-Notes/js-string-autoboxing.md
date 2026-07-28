@@ -157,7 +157,7 @@ console.log("coercedObj instanceof String:", coercedObj instanceof String); // t
 
 ## Related
 * [[js-string-valueof-and-tostring]] - Extracting the primitive string value from wrapper objects.
-* [[js-loose-equality-comaprison-rules]] - Understanding coercion in loose comparisons.
+* [[js-loose-equality-comparison-rules]] - Understanding coercion in loose comparisons.
 * [[js-strict-vs-loose-equality]] - Equality evaluations with reference types vs primitives.
 * [[js-garbage-collection-mark-and-sweep]] - The lifecycle of discarded wrapper objects.
 * [[MOC - JS Built-in Objects & Utilities]] - Hub for built-in wrappers.

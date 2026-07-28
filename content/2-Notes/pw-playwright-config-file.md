@@ -102,4 +102,4 @@ module.exports = defineConfig({
 ## Related
 * [[pw-browser-context-and-page-model]] - How global context options are instantiated as isolated session objects.
 * [[pw-parallel-vs-serial-execution]] - How workers coordinate parallel tests.
-* [[auto-cicd-pipeline-integration]] - Tuning configuration parameters for headless pipeline runs.
+* [[pw-github-actions-integration]] - Tuning configuration parameters for headless pipeline runs.

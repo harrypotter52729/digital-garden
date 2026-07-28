@@ -38,7 +38,7 @@ You should **never** declare strings using `new String()` because it introduces 
 
 ## 1. `valueOf()`
 Returns the primitive string value of a `String` object. It explicitly extracts the primitive string from the wrapper object.
-* Internally, the engine retrieves the hidden `[[PrimitiveValue]]` slot of the object.
+* Internally, the engine retrieves the hidden ```[[js-ecmascript-internal-slots|[[PrimitiveValue]]]]``` slot of the object.
 
 ---
 

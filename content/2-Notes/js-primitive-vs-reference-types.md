@@ -37,4 +37,4 @@ In **Stack** variable it store the reference(address) to the heap data
 
 - [[js-shallow-vs-deep-copy]] - How to copy heap objects without sharing references.
 - [[js-null-vs-undefined]] - Specifics of empty primitive types.
-- [[js-loose-equality-comaprison-rules]] - how the objects and primitves  are compared
+- [[js-loose-equality-comparison-rules]] - how the objects and primitves  are compared

@@ -20,7 +20,7 @@ This map covers how JavaScript stores data, manages variable scope, and how the 
 
 ## Variable Declarations
 * [[js-var-let-const]] - The core differences in scope, reassignment, and redeclaration.
-* [[js-const-mutabilty]] - Why `const` prevents reassignment, but does *not* make objects immutable.
+* [[js-const-mutability]] - Why `const` prevents reassignment, but does *not* make objects immutable.
 
 ## The Execution Context
 * [[js-hoisting]] - How the JS engine moves declarations to the top of their scope during the creation phase and the Temporal Dead Zone (TDZ).

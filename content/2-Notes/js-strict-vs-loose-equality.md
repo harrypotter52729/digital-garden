@@ -25,4 +25,4 @@ difference between them how they handle datatypes and type comparison.
 ### Loose equality
 
 -  it performs [[js-type-conversion]]
-- comparison rules while checking equality [[js-loose-equality-comaprison-rules]]
+- comparison rules while checking equality [[js-loose-equality-comparison-rules]]

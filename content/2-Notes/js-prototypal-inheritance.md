@@ -16,12 +16,12 @@ mastery_level: 1
 JavaScript does not have traditional "classes" like Java or C++. Instead, it uses a system called **Prototypal Inheritance** (often called Behavior Delegation). Objects inherit directly from other objects.
 
 ## What is a Prototype?
-Every JavaScript object has a hidden, internal property called `[[Prototype]]` (historically accessed via `__proto__`). This is simply a reference (a memory link) to another object. 
+Every JavaScript object has a hidden, internal property called `[[js-prototype-chain-mechanics|Prototype]]` (historically accessed via `__proto__`). This is simply a reference (a memory link) to another object. 
 
 ## The Prototype Chain (Property Lookup)
 When you try to access a property or method on an object:
 1. The JS Engine looks on the object itself.
-2. If it doesn't find it, it follows the `[[Prototype]]` link to the parent object and looks there.
+2. If it doesn't find it, it follows the `[[js-prototype-chain-mechanics|Prototype]]` link to the parent object and looks there.
 3. If not found, it checks the parent's parent, continuing up the **Prototype Chain**.
 4. The chain ends at `Object.prototype`. If the property still isn't found, it returns `null` or `undefined`.
 
