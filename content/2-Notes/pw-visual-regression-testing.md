@@ -1,107 +1,102 @@
 ---
-id: 202606131233
-title: Visual Regression Testing
+id: 202608152051
+title: Pixel-Match Visual Regression Testing with toHaveScreenshot
 aliases:
-  - playwright-visual-testing
-  - snapshot-comparison
+  - visual regression testing
+  - toHaveScreenshot
+  - toMatchSnapshot
+  - visual snapshot comparison
 tags:
   - type/concept
-  - tool/playwright
   - status/processing
+  - tool/playwright
   - topic/assertions
-date_created: 2026-06-13
+date_created: 2026-08-15
 mastery_level: 1
 ---
 
-# Visual Regression Testing
-
-> **TL;DR:** Visual Regression Testing verifies that the look of your user interface does not change unexpectedly. Playwright does this by comparing a live screenshot of a page or element against a stored **baseline screenshot** (also called a "golden image") and flagging any pixel deviations.
-
-## The Spot the Difference Analogy
-
-Imagine playing a children's game of **Spot the Difference**:
-
-```
-[ Baseline Image ]               [ Live Test Image ]
-   (Golden Image)                   (Actual Run)
-  +--------------+                +--------------+
-  |  [ Logo ]    |                |  [ Logo ]    |
-  |  Home  Shop  |     ===>       |  Home  *Shop*|  <-- CSS shift changes padding!
-  |  [ Banner ]  |                |  [ Banner ]  |
-  +--------------+                +--------------+
-                                         |
-                                         v
-                                  [ Diff Overlay ]
-                                  (Highlights the 
-                                   mismatch pixels 
-                                   in bright magenta)
-```
-
-1. **The Golden Image:** You take a picture of your web app when it is working perfectly and check it into your repository.
-2. **The Test run:** Playwright runs your test, takes a new screenshot, and overlays the two images.
-3. **The Mismatch Report:** If a pixel color changes or an element shifts by 2 pixels, Playwright highlights the differences in **bright magenta** and fails the test.
+# Pixel-Match Visual Regression Testing with toHaveScreenshot
 
 ---
 
-## Key Configuration & Customization Options
-
-Font rendering, browser engine binaries, and sub-pixel antialiasing can cause minor variations across environments (e.g., running locally on Windows vs running on a Linux CI server). Playwright provides configuration thresholds to accommodate this:
-
-- **`maxDiffPixels`**: The maximum number of pixels that can differ between the actual image and the baseline before marking the test as failed.
-- **`threshold`**: Controls the color difference sensitivity (from `0` to `1`). A threshold of `0.2` allows very minor color changes, while `0` requires an exact match.
-- **`mask`**: An array of locators pointing to elements (like date pickers, ads, or dynamic user text) that should be greyed-out (masked) during the screenshot so they are ignored by the comparison engine.
+> **TL;DR:** `await expect(page).toHaveScreenshot()` compares a live page screenshot pixel-by-pixel against a baseline golden snapshot—flagging unexpected CSS layout shifts, font changes, or color bugs automatically.
 
 ---
 
-## Managing Baselines
+## Why This Exists
 
-When you run visual tests for the first time, they will fail because no baseline image exists. You must generate them:
-- **Command:** `npx playwright test --update-snapshots`
-- This saves the golden screenshots to a directory matching your test file name (e.g., `tests/home-page.spec.js-snapshots/`).
+Standard DOM assertions (`toHaveText()`, `toBeVisible()`) verify element presence and text content, but cannot detect broken CSS layout alignment (e.g., a button shifting 20 pixels down, overlapping text, or wrong background colors). Playwright provides native **Visual Regression Testing** via `toHaveScreenshot()`, comparing live browser rendering against a baseline golden image.
+
+---
+
+## Mental Model
+
+Imagine spot-the-difference picture puzzles in a magazine.
+- **First Run (Baseline Generation):** You take a photograph of the master painting and store it in your safe as the golden baseline (`golden.png`).
+- **Second Run (Visual Comparison):** You take a photo of today's exhibit and overlay it transparently over the golden baseline. If a single stroke or color shifted by 3 pixels, the optical scanner highlights the exact shifted pixels in bright magenta.
+
+---
+
+## How It Works
+
+1. **Initial Baseline Generation:**
+   - Execute `await expect(page).toHaveScreenshot('homepage.png');`.
+   - On first run, Playwright notes no baseline snapshot exists. It creates the baseline image (`homepage.png`) in `tests/__snapshots__/` and marks the test run as skipped/generated.
+2. **Subsequent Visual Testing Runs:**
+   - On subsequent runs, Playwright captures a live screenshot and compares it pixel-by-pixel against `homepage.png`.
+   - If pixel differences exceed tolerance threshold, the test fails, saving actual, expected, and diff images in `test-results/`.
+
+---
+
+## Key Characteristics
+
+- **Zero Third-Party Tools:** Built natively into `@playwright/test` without requiring Applitools or Percy.
+- **Pixel Diff Highlighting:** Generates 3-way visual comparisons (Expected, Actual, Diff with magenta highlights).
+- **Configurable Pixel Tolerance:** Configure `maxDiffPixels` or `maxDiffPixelRatio` to tolerate minor OS font rendering variations.
+
+---
+
+## Common Mistakes
+
+- **Running visual regression tests on dynamic pages with live timestamps/news tickers:** Running `toHaveScreenshot()` on pages displaying live clocks (`10:45 AM`) or changing news feeds. The test fails every minute! Mask dynamic elements using `{ mask: [page.locator('.clock-widget')] }`.
+- **Comparing snapshots generated across different OS platforms:** Generating baseline snapshots on macOS and running visual tests on Windows/Linux CI containers. Operating systems render fonts differently, causing false failures. Always run visual tests inside Docker containers or consistent OS environments.
 
 ---
 
 ## Canonical Code Example
 
-This code illustrates capturing a visual snapshot of a specific card container while masking dynamic content:
-
 ```javascript
-// @ts-check
-const { test, expect } = require("@playwright/test");
+// Pixel-match visual regression testing with dynamic element masking
+const { test, expect } = require('@playwright/test');
 
-test("Dashboard card visual regression validation", async ({ page }) => {
-  await page.goto("/dashboard");
+test('verify landing page visual layout matches baseline snapshot', async ({ page }) => {
+  await page.goto('https://google.com');
 
-  const revenueCard = page.locator("#revenue-widget");
-  const chartsWrapper = page.locator(".charts-container");
+  // 1. Assert full-page screenshot matches baseline golden snapshot
+  // On first execution: Generates baseline 'google_landing.png'
+  // On second execution: Compares live rendering against 'google_landing.png'
+  await expect(page).toHaveScreenshot('google_landing.png', {
+    // Mask dynamic elements (e.g., live clocks or dynamic promo banners)
+    mask: [page.locator('.dynamic-promo-banner')],
 
-  // 1. Ensure the UI is fully loaded and stable first
-  // Taking a screenshot before animations complete causes visual failures!
-  await expect(revenueCard).toBeVisible();
-  
-  // 2. Element Snapshot: Visual test on a specific card locator only
-  // This reduces flakiness compared to testing the whole page
-  await expect(revenueCard).toHaveScreenshot("revenue-widget-baseline.png");
-
-  // 3. Full Page Snapshot with customizations
-  // Masking dynamic elements (like a changing charts container) prevents failures 
-  // when the underlying chart data changes.
-  await expect(page).toHaveScreenshot("dashboard-fullpage-baseline.png", {
-    // Hide the charts container by rendering a gray box over it during comparison
-    mask: [chartsWrapper],
-    
-    // Pixel tolerance settings
-    maxDiffPixels: 100, // Allow up to 100 mismatched pixels
-    threshold: 0.2,     // Visual sensitivity (default is 0.2)
-    
-    // Auto-scroll the page and stitch images together for long pages
-    fullPage: true,
+    // Allow minor sub-pixel rendering tolerance (5% pixel variance)
+    maxDiffPixelRatio: 0.05,
   });
 });
 ```
 
 ---
 
+## Key Takeaways
+
+- `await expect(page).toHaveScreenshot('name.png')` performs pixel-match visual comparisons against baseline images.
+- First run automatically generates baseline snapshots in `__snapshots__/`.
+- Use `mask: [locator]` to hide dynamic elements (clocks, timestamps, ads) from visual comparison.
+
+---
+
 ## Related
-* [[pw-web-first-assertions]] - Waiting for dynamic elements to finish rendering before taking screenshots.
-* [[pw-playwright-config-file]] - Defining default snapshot paths and configuring visual thresholds globally.
+
+- [[pw-screenshot-capture-page-element]] — Screenshot capture
+- [[pw-html-reporting-artifacts]] — Visual diffs in HTML reports
+- [[MOC - Playwright Assertions]]

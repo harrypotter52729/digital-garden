@@ -14,7 +14,6 @@ mastery_level: 1
 
 # Proxy and Reflect API Overview
 
-> **Notice:** This legacy combined note has been refactored into dedicated atomic Zettelkasten notes to preserve single-concept focus.
 
 ## Atomic Notes
 - [[js-reflect-api]] — Standardized functional object operations via the Reflect API.
