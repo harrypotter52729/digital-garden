@@ -1,85 +1,38 @@
-# YOUR COMPLETE 90-DAY PLAN — ALL 7 SECTIONS
-
----
-
-# ━━━ SECTION 1: QUIT-OR-STAY DECISION FRAMEWORK ━━━
-
-## 1A. Financial Pre-Conditions (ALL must be TRUE before quitting)
-
-|#|Condition|Minimum Threshold|Why This Number|
-|---|---|---|---|
-|1|**Liquid savings** (savings account, FD — NOT mutual funds/stocks)|**10 months** of total monthly expenses|India's current hiring cycle: 12–16 weeks to get offer + 0–90 day notice at new company. 10 months covers worst-case gap + 2 month buffer|
-|2|**Active EMIs** (home loan, car loan, personal loan, education loan)|Either **zero** OR fully covered within the 10-month fund above|One missed EMI destroys CIBIL score, which you can't fix quickly|
-|3|**Dependents** (parents, spouse without income, children)|Separate fund or independent income covering their needs for 6 months|Your learning capacity drops to zero when a parent needs medical money and you have no paycheck|
-|4|**Health insurance**|Active independent policy — NOT employer-provided group cover|The day you resign, your group cover ends. One hospitalization can wipe out your savings|
-|5|**Credit card debt**|**Zero** outstanding balance|36–42% annual interest on Indian credit cards will eat your savings alive|
-|6|**Rent** (if applicable)|Included in the 10-month calculation + landlord accepts 2-month advance|Landlords in Bangalore/Hyderabad/Pune don't care about your career plans|
-
-**Scoring: If even ONE condition is FALSE → do NOT quit.**
 
 ---
 
 ## 1B. Psychological Risk Assessment — Specific to YOUR Profile
 
-|Risk Factor|Why It's Dangerous FOR YOU Specifically|Severity|
-|---|---|---|
-|**Inconsistency history + no external structure**|Your job forces you to wake up, log in, and function daily. Remove that, and your 3-on/7-off cycle becomes 1-on/14-off. You've seen this in yourself.|🔴 CRITICAL|
-|**Introvert + isolation**|Full-time study at home = zero human interaction for weeks. For introverts, this doesn't energize — it creates a fog where days blur together and urgency evaporates.|🔴 CRITICAL|
-|**India market slowdown guilt spiral**|You'll check LinkedIn/Naukri, see fewer postings, panic, lose motivation to study because "what's the point," then feel guilty for not studying. This cycle is lethal to progress.|🟡 HIGH|
-|**Financial anxiety overriding learning**|Even with savings, watching your bank balance decrease monthly while not earning creates background anxiety that makes deep learning nearly impossible.|🟡 HIGH|
-|**Resume gap perception**|Indian hiring managers in 2024–25 ARE asking about gaps. A 3–6 month gap with "I was upskilling" gets skepticism, not respect, especially for 5-year experienced candidates. They expect you to upskill while working.|🟡 HIGH|
+| Risk Factor                                       | Why It's Dangerous FOR YOU Specifically                                                                                                                                                                                | Severity    |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| **Inconsistency history + no external structure** | Your job forces you to wake up, log in, and function daily. Remove that, and your 3-on/7-off cycle becomes 1-on/14-off. You've seen this in yourself.                                                                  | 🔴 CRITICAL |
+| **Introvert + isolation**                         | Full-time study at home = zero human interaction for weeks. For introverts, this doesn't energize — it creates a fog where days blur together and urgency evaporates.                                                  | 🔴 CRITICAL |
+| **India market slowdown guilt spiral**            | You'll check LinkedIn/Naukri, see fewer postings, panic, lose motivation to study because "what's the point," then feel guilty for not studying. This cycle is lethal to progress.                                     | 🟡 HIGH     |
+| **Financial anxiety overriding learning**         | Even with savings, watching your bank balance decrease monthly while not earning creates background anxiety that makes deep learning nearly impossible.                                                                | 🟡 HIGH     |
+| **Resume gap perception**                         | Indian hiring managers in 2024–25 ARE asking about gaps. A 3–6 month gap with "I was upskilling" gets skepticism, not respect, especially for 5-year experienced candidates. They expect you to upskill while working. | 🟡 HIGH     |
 
 ---
-
-## 1C. Third Options (Before the Binary)
-
-|Option|How It Works|Feasibility for You|
-|---|---|---|
-|**Negotiate notice to 60 days**|Many Indian employers allow this via earned leave adjustment or manager approval. Ask HR: "Can I adjust my notice period using my earned leave balance?"|✅ HIGH — most companies allow this, you just haven't asked|
-|**Take 2–3 weeks planned leave**|Accumulate earned leave, take a block off during Weeks 9–12 of the plan for intensive practice + interviews|✅ HIGH — you have 5 years of tenure, likely have leave balance|
-|**Internal switch**|Ask if your company has projects using Playwright, Selenium, or Cypress. Even a lateral move gives you real tool exposure while staying employed|🟡 MEDIUM — depends on company size and projects|
-|**Reduce work intensity**|If your current project is low-pressure, do the minimum at work and redirect energy to learning during non-peak hours|🟡 MEDIUM — depends on project demands|
-|**Moonlight on weekends**|Take small freelance QA automation gigs on platforms like Upwork/Toptal to build real Playwright experience while employed|🔴 LOW — you have consistency issues; adding more commitments won't help|
-
----
-
-## 1D. My Recommendation
-
-**🟢 STAY IN YOUR JOB. DO NOT QUIT.**
-
-**Reasoning:**
-
-1. Your #1 problem is not time — it's consistency. Quitting gives you more time but does **nothing** for consistency. You'll have 14 hours/day of free time and use 0 of them.
-2. The 12-week plan below requires **13.5 hours/week**. You have these hours while employed.
-3. Your job provides: income, health insurance, routine, a reason to get up, and a safety net. These are prerequisites for learning, not obstacles to it.
-4. India's market in 2024–25 favors employed candidates. Recruiters filter for "currently employed" on Naukri/LinkedIn.
-5. **Your real action items**: (a) Check your earned leave balance tomorrow. (b) Plan a 2-week leave block around Week 10 of the plan. (c) Ask HR about notice period flexibility.
-
-> [🔀 CHANGES IF YOU QUIT]: If you quit anyway, compress the 12-week plan to 8 weeks (you'll have ~35 hours/week). Move job applications to Week 4 instead of Week 7. But expect the inconsistency problem to get WORSE, not better.
-
----
-
 ---
 
 # ━━━ SECTION 2: JAVASCRIPT FUNDAMENTALS — FAST-TRACK (Weeks 1–3) ━━━
 
 ## What You DO and DO NOT Need
 
-|❌ You Do NOT Need|✅ You DO Need|
-|---|---|
-|DOM manipulation (document.querySelector)|async/await and Promises|
-|Event listeners, callbacks in browser|Arrow functions|
-|Node.js http server, Express|Classes (for Page Objects)|
-|Webpack, Babel, bundlers|Modules (import/export)|
-|Frontend frameworks (React, Vue)|Array methods (.map, .filter, .forEach, .find)|
-|RegEx (beyond very basic)|Object destructuring|
-|Prototypes, `this` deep-dive|Template literals|
-|TypeScript|try/catch error handling|
-||JSON.parse / JSON.stringify|
-||String methods (.includes, .trim, .toLowerCase)|
-||for...of loops|
-||Ternary operator, spread operator|
-||Optional chaining (?.)|
+| ❌ You Do NOT Need                         | ✅ You DO Need                                   |
+| ----------------------------------------- | ----------------------------------------------- |
+| DOM manipulation (document.querySelector) | async/await and Promises                        |
+| Event listeners, callbacks in browser     | Arrow functions                                 |
+| Node.js http server, Express              | Classes (for Page Objects)                      |
+| Webpack, Babel, bundlers                  | Modules (import/export)                         |
+| Frontend frameworks (React, Vue)          | Array methods (.map, .filter, .forEach, .find)  |
+| RegEx (beyond very basic)                 | Object destructuring                            |
+| Prototypes, `this` deep-dive              | Template literals                               |
+| TypeScript                                | try/catch error handling                        |
+|                                           | JSON.parse / JSON.stringify                     |
+|                                           | String methods (.includes, .trim, .toLowerCase) |
+|                                           | for...of loops                                  |
+|                                           | Ternary operator, spread operator               |
+|                                           | Optional chaining (?.)                          |
 
 ---
 
@@ -87,15 +40,15 @@
 
 ### WEEK 1: Core Syntax (1.5 hrs/day weekdays, 3 hrs/day weekends = ~13.5 hrs)
 
-|Concept|What to Understand|Playwright Mini-Exercise|Time|
-|---|---|---|---|
-|`const` vs `let`|When to use each. `const` for everything unless you need reassignment.|Declare `const baseURL = 'https://www.flipkart.com'` and `let pageTitle`. Write a test that assigns `pageTitle` after navigation and asserts it.|30 min|
-|**Arrow functions**|`() => {}` syntax. How to write a function that takes parameters and returns a value.|Write a function `const getSearchURL = (query) => \`[https://www.flipkart.com/search?q=${query}\``](https://www.flipkart.com/search?q=$%7Bquery%7D%5C%60%60); use it in a Playwright test to navigate.|45 min|
-|**Template literals**|Backtick strings with `${variable}` interpolation.|Write a test where the product name is a variable, and your XPath selector uses template literals: `` `//a[contains(text(), '${productName}')]` ``|30 min|
-|**String methods**|`.includes()`, `.trim()`, `.toLowerCase()`, `.split()`|Write a test that gets a product title from the page using `textContent()`, trims whitespace, converts to lowercase, and asserts it `.includes('iphone')`|45 min|
-|**Comparison & logic**|`===`, `!==`, `&&`, `\|`, ternary `? :`|Write a test that checks if a product price is above ₹10000. If yes, log "Premium product", else log "Budget product". Use ternary.|30 min|
-|**Objects**|Creating objects, accessing properties with `.` and `[]`, nested objects|Create a `testData` object: `{ user: { name: 'Test', email: 'test@test.com' }, product: 'iPhone' }`. Use its properties in a test.|45 min|
-|**if/else, for loop, for...of**|Basic control flow. `for...of` for iterating arrays.|Write a test that searches for a product, grabs all result titles into an array, loops through them with `for...of`, and logs each one.|1 hr|
+| Concept                         | What to Understand                                                                    | Playwright Mini-Exercise                                                                                                                                                                               | Time   |
+| ------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| `const` vs `let`                | When to use each. `const` for everything unless you need reassignment.                | Declare `const baseURL = 'https://www.flipkart.com'` and `let pageTitle`. Write a test that assigns `pageTitle` after navigation and asserts it.                                                       | 30 min |
+| **Arrow functions**             | `() => {}` syntax. How to write a function that takes parameters and returns a value. | Write a function `const getSearchURL = (query) => \`[https://www.flipkart.com/search?q=${query}\``](https://www.flipkart.com/search?q=$%7Bquery%7D%5C%60%60); use it in a Playwright test to navigate. | 45 min |
+| **Template literals**           | Backtick strings with `${variable}` interpolation.                                    | Write a test where the product name is a variable, and your XPath selector uses template literals: `` `//a[contains(text(), '${productName}')]` ``                                                     | 30 min |
+| **String methods**              | `.includes()`, `.trim()`, `.toLowerCase()`, `.split()`                                | Write a test that gets a product title from the page using `textContent()`, trims whitespace, converts to lowercase, and asserts it `.includes('iphone')`                                              | 45 min |
+| **Comparison & logic**          | `===`, `!==`, `&&`, `\|`, ternary `? :`                                               | Write a test that checks if a product price is above ₹10000. If yes, log "Premium product", else log "Budget product". Use ternary.                                                                    | 30 min |
+| **Objects**                     | Creating objects, accessing properties with `.` and `[]`, nested objects              | Create a `testData` object: `{ user: { name: 'Test', email: 'test@test.com' }, product: 'iPhone' }`. Use its properties in a test.                                                                     | 45 min |
+| **if/else, for loop, for...of** | Basic control flow. `for...of` for iterating arrays.                                  | Write a test that searches for a product, grabs all result titles into an array, loops through them with `for...of`, and logs each one.                                                                | 1 hr   |
 
 **Weekend Project (3 hrs):** Combine everything into ONE test file: navigate to a site, search for a product using a variable, loop through results, check if any result includes the search term, assert at least one match.
 
