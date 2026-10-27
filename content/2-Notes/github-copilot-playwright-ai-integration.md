@@ -4,7 +4,7 @@ title: GitHub Copilot Generative AI Integration for Playwright Test Automation
 aliases:
   - GitHub Copilot Playwright
   - AI test automation
-  - @workspace copilot
+  - workspace copilot
   - copilot prompt engineering
 tags:
   - type/concept
