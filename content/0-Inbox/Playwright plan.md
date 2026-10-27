@@ -1,7 +1,5 @@
 
----
-
-## 1B. Psychological Risk Assessment — Specific to YOUR Profile
+## 1B.  Risk Assessment — Specific to YOUR Profile
 
 | Risk Factor                                       | Why It's Dangerous FOR YOU Specifically                                                                                                                                                                                | Severity    |
 | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
@@ -11,7 +9,6 @@
 | **Financial anxiety overriding learning**         | Even with savings, watching your bank balance decrease monthly while not earning creates background anxiety that makes deep learning nearly impossible.                                                                | 🟡 HIGH     |
 | **Resume gap perception**                         | Indian hiring managers in 2024–25 ARE asking about gaps. A 3–6 month gap with "I was upskilling" gets skepticism, not respect, especially for 5-year experienced candidates. They expect you to upskill while working. | 🟡 HIGH     |
 
----
 ---
 
 # ━━━ SECTION 2: JAVASCRIPT FUNDAMENTALS — FAST-TRACK (Weeks 1–3) ━━━
