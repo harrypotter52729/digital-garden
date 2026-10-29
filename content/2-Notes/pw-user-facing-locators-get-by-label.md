@@ -1,6 +1,6 @@
 ---
 id: 202608152030
-title: User-Facing Locators: getByLabel() and Implicit Form Association
+title: "User-Facing Locators: getByLabel() and Implicit Form Association"
 aliases:
   - getByLabel
   - user-facing locators

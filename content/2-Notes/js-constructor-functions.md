@@ -5,7 +5,6 @@ aliases:
   - constructor functions
   - new keyword
   - constructor pattern
-  - ``[[js-ecmascript-internal-slots|[[Construct]]]]``
 tags:
   - type/concept
   - status/processing
@@ -19,8 +18,6 @@ mastery_level: 1
 # Constructor Functions and the `new` Keyword
 
 > **TL;DR:** A constructor function is a factory mold for casting objects, and the `new` keyword is the automated hydraulic press that feeds a blank memory chunk into the mold, binds `this` to it, executes the custom design, and hands you the completed object back automatically!
-
----
 
 ## Why This Exists
 Before ES6 `class` syntax was introduced, JavaScript relied entirely on regular functions combined with the `new` operator to implement Object-Oriented Programming (OOP) and instance instantiation. 
@@ -51,10 +48,10 @@ new User("Luffy", 26)
 
 ## How It Works
 
-When a function is invoked with the `new` operator (e.g., `new User("Alice")`), the engine executes the ECMAScript internal ```[[js-ecmascript-internal-slots|[[Construct]]]]``` algorithm step-by-step:
+When a function is invoked with the `new` operator (e.g., `new User("Alice")`), the engine executes the ECMAScript internal [[js-ecmascript-internal-slots|Construct]] algorithm step-by-step:
 
 1. **Allocation:** Creates a new, blank plain JavaScript object: `const instance = {}`.
-2. **Prototype Binding:** Sets `instance.[[js-prototype-chain-mechanics|Prototype]]` to `ConstructorFunction.prototype`.
+2. **Prototype Binding:** Sets instance.[[js-prototype-chain-mechanics|Prototype]] to `ConstructorFunction.prototype`.
 3. **Execution & `this` Binding:** Invokes `ConstructorFunction` with `this` bound to the newly created `instance`, passing all supplied arguments.
 4. **Return Resolution:**
    - If the constructor function explicitly returns a **non-primitive object**, that returned object overrides the created `instance`.

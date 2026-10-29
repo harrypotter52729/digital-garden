@@ -1,6 +1,6 @@
 ---
 id: 202608152119
-title: Playwright Inbuilt Autonomous AI Agents: Planner, Generator, and Healer
+title: "Playwright Inbuilt Autonomous AI Agents: Planner, Generator, and Healer"
 aliases:
   - Playwright AI agents
   - Planner agent

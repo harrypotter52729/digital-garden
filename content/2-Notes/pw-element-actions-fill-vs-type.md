@@ -1,6 +1,6 @@
 ---
 id: 202608152009
-title: Element Action Methods: fill() vs Deprecated type()
+title: "Element Action Methods: fill() vs Deprecated type()"
 aliases:
   - fill vs type
   - fill method

@@ -1,6 +1,6 @@
 ---
 id: 202608152019
-title: Text Extraction vs Input Value: textContent() vs inputValue()
+title: "Text Extraction vs Input Value: textContent() vs inputValue()"
 aliases:
   - textContent vs inputValue
   - inputValue method

@@ -1,6 +1,6 @@
 ---
 id: 202608152120
-title: Core JavaScript Interview Concepts: Asynchronous Execution, Inheritance, and Equality
+title: "Core JavaScript Interview Concepts: Asynchronous Execution, Inheritance, and Equality"
 aliases:
   - js interview concepts
   - callbacks vs promises
